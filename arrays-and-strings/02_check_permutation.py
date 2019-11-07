@@ -1,7 +1,7 @@
 # Given two strings, write a method to decide if one is a permutation of the other
 
-def sort(str):
-    return ''.join(sorted(str))
+def sort(string):
+    return ''.join(sorted(string))
 
 def permutation(s, t):
     if len(s) != len(t):

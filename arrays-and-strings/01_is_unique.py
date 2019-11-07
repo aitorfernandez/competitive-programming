@@ -1,8 +1,8 @@
 # Implement an algorithm to determine if a string has all unique characters
 
-def all_unique_characters(str):
+def all_unique_characters(string):
     chars = {}
-    for c in str:
+    for c in string:
         if c in chars:
             return False
         else:
