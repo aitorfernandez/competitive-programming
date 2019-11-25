@@ -1,0 +1,9 @@
+*.swo
+*.swp
+.DS_Store
+.tags
+
+.cache
+.pytest_cache
+.venv*
+__pycache__/
