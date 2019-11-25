@@ -9,6 +9,7 @@ def all_unique_characters(string):
             chars[c] = True
     return True
 
+
 if __name__ == '__main__':
     unique = all_unique_characters('Lorem ipsum dolor sit amet, consectetur adipiscing elit')
     print(unique)

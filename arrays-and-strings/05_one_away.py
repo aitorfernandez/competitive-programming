@@ -11,6 +11,7 @@ def check_edit(length, counter):
     else:
         return length == counter
 
+
 def edit(str_a, str_b):
     counter = 0
     for s in str_a:
@@ -20,6 +21,7 @@ def edit(str_a, str_b):
         return True
     return False
 
+
 def one_away(str_a, str_b):
     if len(str_a) > len(str_b):
         return edit(str_a, str_b)
@@ -27,6 +29,7 @@ def one_away(str_a, str_b):
         return edit(str_b, str_a)
 
     return edit(str_a, str_b)
+
 
 if __name__ == '__main__':
     result = one_away('pale', 'ple')

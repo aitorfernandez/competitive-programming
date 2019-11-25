@@ -3,6 +3,7 @@
 def is_palindrome(string):
     return string == ''.join(reversed(string))
 
+
 def permutations(string, step = 0):
     if step == len(string):
         s = str(''.join(string))
@@ -14,6 +15,7 @@ def permutations(string, step = 0):
         string_copy[step], string_copy[i] = string_copy[i], string_copy[step]
 
         permutations(string_copy, step + 1)
+
 
 if __name__ == '__main__':
     permutations('abb')

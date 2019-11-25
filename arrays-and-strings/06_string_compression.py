@@ -19,6 +19,7 @@ def string_compression(string):
             compression = update_compression(s)
             counter = 0
 
+
 if __name__ == '__main__':
     result = string_compression('aabccccrRrr')
     print(result)
