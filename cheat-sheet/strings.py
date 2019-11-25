@@ -17,7 +17,7 @@ print(''.join(reversed(string)))
 # slicing
 print(string[:11])   # Lorem ipsum
 print(string[:11:2]) # Lrmism
-print(string[-4:]) # elit
+print(string[-4:])   # elit
 
 # count the number of times appear
 print(string.count('o'), string.count('dolor'))
