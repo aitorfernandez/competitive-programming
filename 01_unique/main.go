@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	unique := unique("Lorem ipsum dolor")
-	fmt.Println(unique)
+	r := unique("abcde")
+	fmt.Println(r)
 }
 
 func unique(str string) bool {
@@ -22,9 +22,9 @@ func unique(str string) bool {
 	return true
 }
 
-func include(arr []string, s string) bool {
-	for _, v := range arr {
-		if v == s {
+func include(a []string, x string) bool {
+	for _, n := range a {
+		if n == x {
 			return true
 		}
 	}
