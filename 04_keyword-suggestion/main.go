@@ -21,7 +21,7 @@ func main() {
 }
 
 func keywordSuggestions(words []string, query string) []string {
-	suggestions := []string{}
+	var suggestions []string
 	for _, word := range words {
 		if query == word[:len(query)] {
 			suggestions = append(suggestions, word)
