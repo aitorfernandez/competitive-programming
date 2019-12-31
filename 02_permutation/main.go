@@ -25,11 +25,13 @@ func permutation(s string, t string) bool {
 			return false
 		}
 	}
+
 	return true
 }
 
 func sortString(s string) []string {
 	arr := strings.Split(s, "")
 	sort.Strings(arr)
+
 	return arr
 }

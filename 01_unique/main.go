@@ -19,6 +19,7 @@ func unique(str string) bool {
 		}
 		chars = append(chars, string(s))
 	}
+
 	return true
 }
 
@@ -28,5 +29,6 @@ func include(a []string, x string) bool {
 			return true
 		}
 	}
+
 	return false
 }

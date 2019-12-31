@@ -29,6 +29,7 @@ func compression(str string) string {
 			count = 0
 		}
 	}
+
 	return output
 }
 

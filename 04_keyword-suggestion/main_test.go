@@ -16,6 +16,12 @@ func TestKeywordSuggestions(t *testing.T) {
 		"Reno",
 	}
 
+	check := func(got, want interface{}) {
+		if fmt.Sprintf("%v", got) != fmt.Sprintf("%v", want) {
+			t.Errorf("got %v want %v", got, want)
+		}
+	}
+
 	t.Run("return limit", func(t *testing.T) {
 		got := keywordSuggestions(cities, "Ba")
 		want := [3]string{
@@ -24,18 +30,13 @@ func TestKeywordSuggestions(t *testing.T) {
 			"Basel",
 		}
 
-		// TODO: check doesn't work reflect.DeepEqual(got, want)
-		if fmt.Sprintf("%v", got) != fmt.Sprintf("%v", want) {
-			t.Errorf("got %v want %v", got, want)
-		}
+		check(got, want)
 	})
 
 	t.Run("return less than limit", func(t *testing.T) {
 		got := keywordSuggestions(cities, "O")
 		want := [1]string{"Okazaki"}
 
-		if fmt.Sprintf("%v", got) != fmt.Sprintf("%v", want) {
-			t.Errorf("got %v want %v", got, want)
-		}
+		check(got, want)
 	})
 }

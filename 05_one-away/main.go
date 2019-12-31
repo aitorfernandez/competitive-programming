@@ -50,6 +50,7 @@ func include(s, x string) bool {
 			return true
 		}
 	}
+
 	return false
 }
 
