@@ -1,6 +1,6 @@
 # competitive-programming
 
-## /coding-interview
+## coding-interview
 
 - 01_unique
 - 02_permutation
