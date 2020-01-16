@@ -11,6 +11,6 @@
 
 ## exercism/go
 
-- 01_hello-world
-- 01.5_space-age
-- 02_two-fer
+- hello-world
+- space-age
+- two-fer
