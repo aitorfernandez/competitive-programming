@@ -5,7 +5,7 @@ import "fmt"
 
 // ShareWith returns a string with the message One for X, one for me.
 func ShareWith(name string) string {
-	if len(name) == 0 {
+	if name == "" {
 		name = "you"
 	}
 	return fmt.Sprintf("One for %s, one for me.", name)
