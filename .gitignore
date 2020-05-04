@@ -3,4 +3,7 @@
 *.swp
 *.tmp
 .DS_Store
+.exercism
 .tags
+
+notes.md
