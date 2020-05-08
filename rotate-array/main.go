@@ -11,7 +11,7 @@ func main() {
 
 func rotate(nums []int, k int) {
 	l := len(nums)
-	k = k % l
+	k %= l
 
 	arr := append(nums[l-k:], nums[:l-k]...)
 	copy(nums, arr)
