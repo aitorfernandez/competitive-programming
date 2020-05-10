@@ -7,7 +7,10 @@ import "fmt"
 
 // Distance returns the difference between two strands.
 func Distance(a, b string) (int, error) {
-	if len(a) != len(b) {
+	// ref: https://blog.golang.org/strings
+	ar, br := []rune(a), []rune(b)
+
+	if len(ar) != len(br) {
 		return 0, fmt.Errorf("sequences not equal %v, %v", len(a), len(b))
 	}
 
@@ -16,8 +19,8 @@ func Distance(a, b string) (int, error) {
 	}
 
 	var counter int
-	for i := range a {
-		if a[i] != b[i] {
+	for i := 0; i < len(ar); i++ {
+		if ar[i] != br[i] {
 			counter++
 		}
 	}
