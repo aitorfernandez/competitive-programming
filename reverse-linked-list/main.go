@@ -14,7 +14,7 @@ type ListNode struct {
 
 // ReverseList reverse a singly linked list.
 func ReverseList(head *ListNode) *ListNode {
-	var l *NodeList
+	var l *ListNode
 	for head != nil {
 		l, head, head.Next = head, head.Next, l
 	}
