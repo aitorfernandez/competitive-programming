@@ -27,20 +27,14 @@ And to total:
 */
 package scrabble
 
-import (
-	"strings"
-)
+import "unicode"
 
 // Score returns the Scrabble score.
 func Score(str string) int {
 	var score int
 
-	if str == "" {
-		return score
-	}
-
 	for _, s := range str {
-		switch strings.ToLower(string(s)) {
+		switch string(unicode.ToLower(s)) {
 		case "a", "e", "i", "o", "u", "l", "n", "r", "s", "t":
 			score += 1
 		case "d", "g":
