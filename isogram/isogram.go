@@ -10,9 +10,7 @@ func IsIsogram(str string) bool {
 	m := make(map[rune]int)
 	for _, s := range str {
 		m[unicode.ToLower(s)]++
-	}
 
-	for _, s := range str {
 		if m[unicode.ToLower(s)] > 1 && !allowCharacter(s) {
 			return false
 		}
