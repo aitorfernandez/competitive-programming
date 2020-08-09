@@ -7,21 +7,20 @@ import "unicode"
 
 // IsIsogram retursn true if the word or phrase is an isogram.
 func IsIsogram(str string) bool {
-	m := make(map[rune]int)
+	repeated := make(map[rune]bool)
 	for _, s := range str {
-		m[unicode.ToLower(s)]++
+		r := unicode.ToLower(s)
 
-		if m[unicode.ToLower(s)] > 1 && !allowCharacter(s) {
+		if r == '-' || r == ' ' {
+			continue
+		}
+
+		if repeated[r] {
 			return false
 		}
+
+		repeated[r] = true
 	}
 
 	return true
-}
-
-func allowCharacter(r rune) bool {
-	if r == '-' || r == ' ' {
-		return true
-	}
-	return false
 }
