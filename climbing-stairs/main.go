@@ -29,12 +29,12 @@ func counting(stairsRemaining int, m map[int]int) int {
 	// 	return v
 	// }
 
-	// Check for zero value
+	// Check for zero value.
 	if m[stairsRemaining] != 0 {
 		return m[stairsRemaining]
 	}
 
-	// left and right in the tree
+	// left and right paths in the tree
 	m[stairsRemaining] = counting(stairsRemaining-1, m) + counting(stairsRemaining-2, m)
 
 	return m[stairsRemaining]
