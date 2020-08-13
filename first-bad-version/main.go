@@ -16,7 +16,7 @@ func FirstBadVersion(vv []bool) int {
 	for left < right {
 		mid := left + (right-left)/2
 		// if !isBadVersion(mid, vv) it's more memory expensive
-		if isBadVersion(mid, vv) {
+		if vv[mid] {
 			right = mid
 		} else {
 			left = mid + 1
@@ -24,8 +24,4 @@ func FirstBadVersion(vv []bool) int {
 	}
 
 	return left
-}
-
-func isBadVersion(n int, vv []bool) bool {
-	return vv[n]
 }

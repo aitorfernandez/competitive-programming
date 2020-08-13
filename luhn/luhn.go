@@ -23,7 +23,7 @@ func Valid(str string) bool {
 		return false
 	}
 
-	nn, err := checkAtoi(str)
+	nn, err := atoi(str)
 	if err != nil {
 		return false
 	}
@@ -52,7 +52,7 @@ func isSumDivisible(nn []int, d int) bool {
 	return false
 }
 
-func checkAtoi(str string) ([]int, error) {
+func atoi(str string) ([]int, error) {
 	var nn []int
 
 	for _, s := range str {

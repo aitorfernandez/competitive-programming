@@ -13,7 +13,7 @@ func main() {
 
   Starts for the end and update first array, assume that nums1 has enough space (size that is equal to m + n) to hold additional elements from nums2.
   first              second
-  [1, 2, 3, 0, 0, 6] [2, 5, 6]
+  [1, 2, 3, 0, 0, 0] [2, 5, 6]
 
   for i = m + n - 1; i >= 0; i-- {
 	  // ...
