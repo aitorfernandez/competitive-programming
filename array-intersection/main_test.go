@@ -12,6 +12,7 @@ var tests = []struct {
 	{[]int{9, 4, 9, 8, 4}, []int{4, 9, 5}, []int{4, 9}},
 	{[]int{1, 2, 2, 1}, []int{2}, []int{2}},
 	{[]int{1, 2, 2, 1}, []int{1, 2}, []int{1, 2}},
+	{[]int{4, 1, 4, 7, 4}, []int{7, 4, 8, 6, 4, 7, 4}, []int{7, 4, 4, 4}},
 }
 
 func TestIntersect(t *testing.T) {
