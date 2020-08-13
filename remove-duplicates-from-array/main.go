@@ -25,4 +25,14 @@ func removeDuplicates(nums []int) int {
 	nums = nums[counter:] // remove first positions.
 
 	return len(nums)
+
+	// Faster version...
+	// p1 := 0
+	// for p2, l := 1, len(nums); p2 < l; p2++ {
+	// 	if nums[p1] != nums[p2] {
+	// 		p1++
+	// 		nums[p1] = nums[p2]
+	// 	}
+	// }
+	// return p1 + 1
 }
