@@ -7,7 +7,7 @@ import (
 type row map[string]int
 
 func main() {
-	fmt.Println("vim-go")
+	fmt.Println("min-by-column")
 }
 
 func minByColumn(table []row, column string) row {
