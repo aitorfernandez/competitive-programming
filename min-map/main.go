@@ -16,8 +16,7 @@ func minByColumn(table []row, column string) row {
 	for _, r := range table {
 		for k, v := range r {
 			if column == k {
-				_, ok := out[k]
-				if ok {
+				if _, ok := out[k]; ok {
 					if out[k] > v {
 						out[k] = v
 					}
