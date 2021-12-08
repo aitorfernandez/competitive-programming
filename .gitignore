@@ -2,6 +2,12 @@
 *.swo
 *.swp
 *.tmp
+*tags.vi
 .DS_Store
 .exercism
 .tags
+
+Cargo.lock
+
+debug/
+target/
