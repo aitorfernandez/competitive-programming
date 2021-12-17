@@ -1,24 +1,23 @@
 use std::collections::HashSet;
 
 pub fn anagrams_for<'a>(word: &str, possible_anagrams: &[&'a str]) -> HashSet<&'a str> {
-    fn sort_n_lowercase(input: &str) -> String {
-        let mut chars: Vec<char> = input.to_lowercase().chars().collect();
-        chars.sort();
-        chars.into_iter().collect()
-    }
+    let word_lower = word.to_lowercase();
+    let word_sorted = get_sorted(&word_lower);
 
-    let mut result: HashSet<&'a str> = HashSet::new();
-    let sorted_word = sort_n_lowercase(word);
+    possible_anagrams
+        .iter()
+        .filter(|candidate| {
+            let candidate_lower = candidate.to_lowercase();
+            candidate_lower.len() == word_lower.len()
+                && candidate_lower != word_lower
+                && get_sorted(&candidate_lower) == word_sorted
+        })
+        .copied()
+        .collect()
+}
 
-    for anagram in possible_anagrams {
-        if anagram.to_lowercase() == word.to_lowercase() {
-            continue;
-        }
-        let sorted_anagram = sort_n_lowercase(anagram);
-        if sorted_word == sorted_anagram {
-            result.insert(*anagram);
-        }
-    }
-
-    result
+fn get_sorted(word: &str) -> Vec<char> {
+    let mut word_sorted: Vec<char> = word.chars().collect();
+    word_sorted.sort_unstable();
+    word_sorted
 }
