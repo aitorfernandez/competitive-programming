@@ -4,6 +4,8 @@
 
 - resistor-color: `option` and `result` types, `enum` iterate and `enum` collect
 
+- role-playing-game: `match`, `match` with `true` and `false` and `if let Some(x)`
+
 - semi-structured-logs: `enum` and `format!`
 
 - short-fibonacci: `vec` and `match`
