@@ -7,3 +7,5 @@
 - semi-structured-logs: `enum` and `format!`
 
 - short-fibonacci: `vec` and `match`
+
+- low-power-embedded-game: `vec` with `tuple` and `map`
