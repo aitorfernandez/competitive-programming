@@ -2,12 +2,14 @@
 
 - assembly-line: `floating` and `integer` numbers and `match` flow control
 
-- resistor-color: `option` and `result` types, `enum` iterate and `enum` collect
+- low-power-embedded-game: `Vec` with tuple and `map`
+
+- magazine-cutout: `HashMap`
+
+- resistor-color: `Option` and `Result` types, `Enum` iterate and `Enum` collect
 
 - role-playing-game: `match`, `match` with `true` and `false` and `if let Some(x)`
 
-- semi-structured-logs: `enum` and `format!`
+- semi-structured-logs: `Enum` and `format!`
 
-- short-fibonacci: `vec` and `match`
-
-- low-power-embedded-game: `vec` with `tuple` and `map`
+- short-fibonacci: `Vec` and `match`
