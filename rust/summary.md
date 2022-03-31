@@ -8,6 +8,8 @@
 
 - resistor-color: `Option` and `Result` types, `Enum` iterate and `Enum` collect
 
+- reverse-string: `str` to `Iterator` and `rev`
+
 - role-playing-game: `match`, `match` with `true` and `false` and `if let Some(x)`
 
 - semi-structured-logs: `Enum` and `format!`
