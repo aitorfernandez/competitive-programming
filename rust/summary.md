@@ -2,6 +2,8 @@
 
 - assembly-line: `floating` and `integer` numbers and `match` flow control
 
+- clock: `Display trait`
+
 - gigasecond: `PrimitiveDateTime`
 
 - low-power-embedded-game: `Vec` with tuple and `map`
