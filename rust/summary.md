@@ -1,6 +1,10 @@
 # Summary
 
+- armstrong-numbers: `Iterator`
+
 - assembly-line: `floating` and `integer` numbers and `match` flow control
+
+- beer-song: `Iterator` and `match`
 
 - clock: `Display trait`
 
