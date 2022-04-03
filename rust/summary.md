@@ -8,7 +8,11 @@
 
 - clock: `Display trait`
 
+- difference-of-squares: `map`, `sum` and `pow`
+
 - gigasecond: `PrimitiveDateTime`
+
+- grains: `map` and `pow`
 
 - low-power-embedded-game: `Vec` with tuple and `map`
 
