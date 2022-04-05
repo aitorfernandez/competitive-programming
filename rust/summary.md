@@ -18,7 +18,9 @@
 
 - magazine-cutout: `HashMap`
 
-- prime-factors: `while` loop and `find` iterator method.
+- prime-factors: `while` loop and `find` iterator method
+
+- proverb: `windows`, `collect` and `chain` iterators
 
 - resistor-color: `Option` and `Result` types, `Enum` iterate and `Enum` collect
 
