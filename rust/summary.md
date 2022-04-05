@@ -18,6 +18,8 @@
 
 - magazine-cutout: `HashMap`
 
+- prime-factors: `while` loop and `find` iterator method.
+
 - resistor-color: `Option` and `Result` types, `Enum` iterate and `Enum` collect
 
 - reverse-string: `str` to `Iterator` and `rev`
