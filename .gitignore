@@ -12,5 +12,4 @@ Cargo.lock
 debug/
 target/
 
-rust/**/*.md
-!rust/summary.md
+**/*.md
