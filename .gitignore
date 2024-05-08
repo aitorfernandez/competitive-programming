@@ -12,4 +12,5 @@ Cargo.lock
 debug/
 target/
 
-**/*.md
+resources.md
+sentiment-questions.md
