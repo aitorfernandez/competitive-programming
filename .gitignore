@@ -7,8 +7,6 @@
 .exercism
 .tags
 
-Cargo.lock
-
 debug/
 target/
 
