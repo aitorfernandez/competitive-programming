@@ -11,3 +11,5 @@ debug/
 target/
 
 **/*.md
+
+python/main.py
