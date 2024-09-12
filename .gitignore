@@ -11,5 +11,3 @@ debug/
 target/
 
 **/*.md
-
-python/template
