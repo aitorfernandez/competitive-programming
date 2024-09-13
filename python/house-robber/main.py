@@ -2,12 +2,12 @@ from typing import List
 
 
 def rob(nums: List[int]) -> int:
-    l, r = 0, 0
+    prev_house, cur_house = 0, 0
 
     for n in nums:
-        temp = max(l + n, r)
-        l = r
-        r = temp
+        temp = max(prev_house + n, cur_house)
+        prev_house = cur_house
+        cur_house = temp
 
     return r
 
