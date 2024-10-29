@@ -11,10 +11,12 @@ class TreeNode:
 def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     if not p and not q:
         return True
-    if p and q and p.val == q.val:
-        return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
-    else:
+    if not p or not q:
         return False
+
+    return (
+        p.val == q.val and isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+    )
 
 
 if __name__ == "__main__":
